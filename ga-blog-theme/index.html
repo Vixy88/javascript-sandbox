@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      html,
+      body {
+        font-family: Helvetica, sans-serif;
+        min-height: 100%;
+      }
+
+      header {
+        text-align: center;
+        background: url("https://images.unsplash.com/photo-1492052722242-2554d0e99e3a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHJlYWRpbmd8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+        background-size: cover;
+        color: white;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ffda00;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      img {
+        margin: 40px 0px 0px 0px;
+        border: 3px solid white;
+        border-radius: 20px;
+      }
+      ul {
+        padding: 10px;
+        background: #004953;
+      }
+      li {
+        display: inline;
+        padding: 0px 10px 0px 10px;
+      }
+      article {
+        max-width: 500px;
+        padding: 20px;
+        margin: 0 auto;
+      }
+
+      button {
+        background: #004953;
+        color: #fff;
+        padding: 5px 20px;
+        border-radius: 5px;
+      }
+
+      .flex-container {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .fa {
+        font-size: 30px;
+      }
+
+      #more {
+        display: none;
+      }
+
+      #more2 {
+        display: none;
+      }
+
+      #more3 {
+        display: none;
+      }
+
+      #more4 {
+        display: none;
+      }
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 36px;
+          padding: 5px;
+        }
+        li {
+          padding: 5px;
+        }
+
+        img {
+          max-width: 350px;
+        }
+
+        .flex-container {
+          display: block;
+        }
+      }
+    </style>
+    <title>EAT, SURF, CODE</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://images.unsplash.com/photo-1603478807204-5cc0cc5aec87?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFuJTIwc2VsZmllfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=60"
+      />
+      <h1>Eat, Read, Code</h1>
+      <ul>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#" onclick="funalertFunction()">Whats 2+2?</a></li>
+      </ul>
+    </header>
+    <div class="flex-container">
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1515017671634-012cb9dc6ed0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE1fHxtYW4lMjBzdXJmaW5nfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        />
+        <h2>Why I Love Surfing 🏄</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+          scelerisque enim ligula venenatis dolor. <span id="dots">...</span
+          ><span id="more"
+            >Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+            Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi,
+            sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+            imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+            venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+            pulvinar nibh tempor porta.</span
+          >
+        </p>
+        <button onclick="readmoreFunction()" id="myBtn">Read More</button>
+      </article>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1536739607932-70a81609b241?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHJvb2YlMjBwYXJ0eXxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        />
+        <h2>Why I Love To Code ! 👨‍💻</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+          scelerisque enim ligula venenatis dolor. <span id="dots2">...</span
+          ><span id="more2"
+            >Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+            Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi,
+            sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+            imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+            venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+            pulvinar nibh tempor porta.</span
+          >
+        </p>
+        <button onclick="readmoreFunction2()" id="myBtn2">Read More</button>
+      </article>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1612208176815-e132bcf971b0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9vZCUyMHRydWNrfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        />
+        <h2>Why I Love Food Trucks &#128513;</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+          scelerisque enim ligula venenatis dolor. <span id="dots3">...</span
+          ><span id="more3"
+            >Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+            Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi,
+            sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+            imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+            venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+            pulvinar nibh tempor porta.</span
+          >
+        </p>
+        <button onclick="readmoreFunction3()" id="myBtn3">Read More</button>
+      </article>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1612208176815-e132bcf971b0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9vZCUyMHRydWNrfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        />
+        <h2>Why I Love Food Trucks &#128513;</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+          scelerisque enim ligula venenatis dolor. <span id="dots4">...</span
+          ><span id="more4"
+            >Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+            Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi,
+            sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+            imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+            venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+            pulvinar nibh tempor porta.</span
+          >
+        </p>
+        <button onclick="readmoreFunction4()" id="myBtn4">Read More</button>
+      </article>
+    </div>
+
+    <script>
+      function readmoreFunction() {
+        let dots = document.getElementById("dots");
+        let moreText = document.getElementById("more");
+        let btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read More";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function readmoreFunction2() {
+        let dots = document.getElementById("dots2");
+        let moreText = document.getElementById("more2");
+        let btnText = document.getElementById("myBtn2");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read More";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function readmoreFunction3() {
+        let dots = document.getElementById("dots3");
+        let moreText = document.getElementById("more3");
+        let btnText = document.getElementById("myBtn3");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read More";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function readmoreFunction4() {
+        let dots = document.getElementById("dots4");
+        let moreText = document.getElementById("more4");
+        let btnText = document.getElementById("myBtn4");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read More";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+
+      function funalertFunction() {
+        let person = prompt("What is 2 + 2?");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Jakobsen | GA Portfolio Website</title>
+    <style>
+      body {
+        font-family: helvetica;
+        margin: 30px;
+      }
+      p {
+        font-size: 18px;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        background: green;
+        color: white;
+      }
+
+      img {
+        width: 100%;
+      }
+      .profile-image {
+        border-radius: 50%;
+        width: 200px;
+      }
+
+      .flex-container {
+        width: 100%;
+        display: flex;
+        margin: 20px 0px 20px 0px;
+      }
+
+      .img-container {
+        width: 80%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        margin-right: 10px;
+      }
+
+      .img-text-container {
+        text-align: center;
+        padding: 10px 20px;
+      }
+
+      .home-menu {
+        display: flex;
+        list-style: none;
+        float: right;
+        margin: 30px;
+      }
+
+      .home-menu a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .home-menu a {
+        margin-right: 10px;
+      }
+
+      .home-menu a:hover {
+        color: green;
+      }
+
+      .active {
+        color: green !important;
+      }
+
+      /* MOBILE MENU */
+      #hamburger-icon {
+        font-size: 20px;
+        cursor: pointer;
+        float: right;
+        margin: 18px 0px 10px 0px;
+        float: right !important;
+      }
+
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+
+      .overlay-content {
+        position: relative;
+        top: 15%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .overlay a:hover,
+      .overlay a:focus {
+        color: green;
+      }
+
+      .overlay .closebtn {
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        font-size: 30px;
+      }
+
+      /* MEDIA QUERIES */
+      @media only screen and (max-width: 2000px) and (min-width: 600px) {
+        #hamburger-icon {
+          display: none;
+        }
+      }
+
+      @media (max-width: 600px) {
+        body {
+          text-align: center;
+        }
+
+        .home-menu {
+          display: none;
+        }
+        
+        h1 {
+          font-size: 25px;
+        }
+        
+        input {
+          padding: 5px;
+        }
+
+        .flex-container {
+          display: block;
+        }
+
+        .img-container {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav>
+      <ul class="home-menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Veteran</a></li>
+        <li><a href="#">Coding</a></li>
+        <li><a href="#">Surfing</a></li>
+        <li><a href="#">Family</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu" class="overlay">
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#" class="active">Home</a>
+        <a href="#">Veteran</a>
+        <a href="#">Coding</a>
+        <a href="#">Surfing</a>
+        <a href="#">Family</a>
+      </div>
+    </div>
+    <span id="hamburger-icon" onclick="openNav()">&#9776; Menu</span>
+    <!-- PROFILE IMAGE -->
+    <img class="profile-image"
+      src="https://pbs.twimg.com/profile_images/1422667554049478656/b58xwjI-_400x400.jpg"
+    />
+
+    <!-- Header title and intro text -->
+    <div>
+      <h1>Hi, I'm Michael</h1>
+      <p>
+        I am an army veteran, father of 3 and I love programming because it is
+        focused around innovation and problem solving!
+      </p>
+      <p>
+        In my sparetime I like to spend time with my family or if I get a minute
+        to myself then I love surfing in Devon or Portugal!
+      </p>
+      <p>
+        Check out some cool surfing images
+        <a href="https://unsplash.com/s/photos/surfing" target="_blank"
+          >Click Here</a
+        >
+      </p>
+    </div>
+
+    <!-- IMAGE Banner -->
+    <div class="flex-container">
+          <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1616083391267-de7b0970af2c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHN1cmZpbmd8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="surfer at beach looking at sunset">
+            <div class="img-text-container">
+              <p>SURFING</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1493119508027-2b584f234d6c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29kaW5nfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Open laptop with code on the screen">
+            <div class="img-text-container">
+              <p>CODING</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1528256507509-cc4facea43f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFtaWx5fGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Father having fun with his child">
+            <div class="img-text-container">
+              <p>FAMILY</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1611444993136-ba1fc91f6402?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWlsaXRhcnl8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="surfer at beach looking at sunset">
+            <div class="img-text-container">
+              <p>VETERAN</p>
+            </div>
+          </div>     
+    </div>
+    
+    
+    
+    <!-- SUBSCRIBE TO NEWSLETTER -->
+    <div>
+      <h3>Subscribe to my newsletter here<h3>
+      <input type="email" placeholder="Your email" />
+      <input type="submit" />
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mobile-menu").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mobile-menu").style.width = "0%";
+      }
+    </script>
+  </body>
+</html>
