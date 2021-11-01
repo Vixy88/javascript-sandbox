@@ -36,8 +36,8 @@ class School {
   }
 
   static pickSubstituteTeacher(substituteTeachers) {
-    substituteTeachers = [];
-    return Math.floor((substituteTeachers.length - 1) * Math.random());
+    const randNum = Math.floor(Math.random() * substituteTeachers.length);
+    return substituteTeachers[randNum];
   }
 }
 
@@ -74,3 +74,22 @@ let lorraineHansbury = new Primary(
 console.log(lorraineHansbury);
 console.log("");
 lorraineHansbury.quickFacts();
+
+School.pickSubstituteTeacher([
+  "Jamal Crawford",
+  "Lou Williams",
+  "J. R. Smith",
+  "James Harden",
+  "Jason Terry",
+  "Manu Ginobli",
+]);
+console.log("");
+
+let alSmith = new HighSchool("Al E. Smith", 415, [
+  "Baseball",
+  "Basketball",
+  "Volleyball",
+  "Track and Field",
+]);
+
+console.log(alSmith.sportsTeams);
