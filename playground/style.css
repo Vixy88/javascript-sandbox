@@ -11,7 +11,6 @@ ul {
 }
 
 a {
-  color: #000;
   text-decoration: none;;
 }
 
@@ -30,13 +29,39 @@ h1,h2,h3,h4,h5 {
   margin-right: 10px;
 }
 
-.menu-header li a {
+.nav-btn {
   color: #000;
+  border-bottom: 1px solid transparent;
 }
 
-.menu-header li a:hover {
+.nav-btn:hover {
   color: #004953;
+  border-bottom: 2px solid #004953;
 }
+
+.nav-btn:active {
+  color: #004953;
+  border-bottom: 2px solid #004953;
+}
+
+.contact-btn {
+  background: #fff;
+  color: #004953;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px #004953 solid;
+}
+
+.contact-btn:hover {
+  background: #004953;
+  color: #fff;
+  border: 1px #004953 solid;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5;
+}
+
+/* HERO STYLING */
 
 .hero-banner h1 {
   font-size: 40px;
@@ -82,3 +107,4 @@ h1,h2,h3,h4,h5 {
   width: 50%;
   padding: 30px;
 }
+

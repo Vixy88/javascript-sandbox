@@ -61,5 +61,5 @@ menu.addDishToCourse("desserts", "Brownie Sundae", 6.5);
 menu.addDishToCourse("desserts", "Tiramisu", 5.0);
 menu.addDishToCourse("desserts", "Pecan Pie", 5.25);
 
-const meal = menu.generateRandomMeal();
+const meal = document.querySelector("p").innerText = menu.generateRandomMeal();
 console.log(meal);
